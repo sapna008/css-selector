@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login/Register Page</title>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-section, .register-section {
+  width: 50%;
+  padding: 20px;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+.social-login {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.google {
+  background: #db4437;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 10px;
+  background: #5cb85c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.register-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.register-info ul li {
+  margin-bottom: 10px;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="login-section">
+    <h1>Welcome back!</h1>
+    <button class="social-login facebook">Sign in with Facebook</button>
+    <button class="social-login google">Sign in with Google</button>
+    <form id="login-form">
+      <input type="email" placeholder="Enter your email address here" required />
+      <input type="password" placeholder="Enter your password here" required />
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <div class="register-section">
+    <h2>Not registered yet?</h2>
+    <button>Register</button>
+
+    <div class="register-info">
+      <p>Join Maggi today!</p>
+      <ul>
+        <li>Your personal newsletter with exciting recipes and ideas</li>
+        <li>Personalize your newsletter to your preferences</li>
+        <li>Get to know about Maggi products</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>
