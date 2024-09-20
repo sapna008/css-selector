@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Store</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f2f2f2;}
+  .navbar { display: flex; justify-content: space-around; background-color: #f2f2f2; padding: 10px; box-shadow: 5px 5px 5px rgb(161, 158, 158);}
+  .navbar a { text-decoration: none; color: black; padding: 10px; }
+  .product-grid { display: flex; flex-wrap: wrap; justify-content: space-around; padding: 20px; }
+  .product { width: calc(33% - 40px); margin-bottom: 20px; text-align: center; }
+  .product img { width: 100%; }
+  .price-tag { color: #FF5722; font-weight: bold; }
+  .discount-label { color: #4CAF50; font-weight: bold; }
+  .banner { text-align: center; background-image: url(image.webp);
+    background-size: cover; padding: 20px; margin: 20px 0; }
+  .banner h2 { margin: 0; }
+  .navbar img{
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+  }
+  #s{
+    color: #FF5722; font-weight: bold;
+  }
+
+  .product-container {
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .product {
+    text-align: left;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgb(224, 222, 222);
+  }
+
+  .product img {
+    width: 20%; /* Adjust as needed */
+    height: 20%; /* Adjust as needed */
+  }
+
+  .discount {
+    color: red;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: #faad95;
+    border: 1px solid red;
+    font-weight: bold;
+  }
+
+  .price {
+    color: black;
+    font-weight: bold;
+  }
+  .ban img{
+    height: 150px;
+    width: 96%;
+    padding: 20px;
+    margin: 5px;
+    display: flex;
+  }
+  .com{
+    display: flex;
+  }
+  .p{
+    width: 50%;
+    align-items:baseline;
+    padding-top: 20px;
+  }
+  .c{
+    color: gray;
+  }
+  .ico{
+    width: 20px;
+    height: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <img src="milogo.png" alt="">
+  <a href="#" id="s">Store</a>
+  <a href="#">Phone</a>
+  <a href="#">TV & Smart Home</a>
+  <a href="#">Tablet</a>
+  <a href="#">LifeStyle</a>
+  <a href="#">Discover</a>
+  <a href="#">Support</a>
+  <img src="search.png" alt="" class="ico"><img src="cart.png" alt="" class="ico"><img src="login.png" alt="" class="ico">
+</div>
+
+<div class="product-container">
+  
+    <div class="product">
+      <p>Redmi Earphones</p>
+      <span class="discount">25% off</span><br>
+      <div class="com">
+        <span class="price p">₹449 <br> <span class="c">₹599</span></span>    
+      <img class="p" src="img1.webp" alt="Redmi Earphones">
+      </div>
+    </div>
+  
+    <div class="product">
+  
+      <p>Mi Dual Driver In-ear Earphones</p>
+      <span class="discount">25% off</span><br>
+      <div class="com">
+        <span class="price p">₹799 <br> <span class="c">₹899</span></span>    
+      <img class="p" src="img5.png" alt="Redmi Earphones">
+      </div>
+      
+    </div>
+  
+    <div class="product">
+      <p>Redmi SonicBass Wireless Earphones</p>
+      <span class="discount">25% off</span><br>
+      <div class="com">
+        <span class="price p">₹1,299 <br> <span class="c">₹1699</span></span>    
+      <img class="p" src="img4.jpg" alt="Redmi Earphones">
+      </div>
+    </div>
+  
+    <div class="product">
+      <p>Mi Portable Bluetooth Speaker (16W)</p>
+      <span class="discount">20% off</span><br>
+      <div class="com">
+        <span class="price p">₹2,499<br> <span class="c">₹2699</span></span>    
+      <img class="p" src="img2.webp" alt="Redmi Earphones">
+      </div>
+    </div>
+  
+  </div>
+<div class="ban">
+    <img src="image.webp" alt="">
+</div>
+
+
+<div class="product-container">
+  
+    <div class="product">
+      <p>Redmi Earphones</p>
+      <span class="discount">25% off</span><br>
+      <div class="com">
+        <span class="price p">₹599 <br> <span class="c">₹699</span></span>    
+      <img class="p" src="img3.jpg" alt="Redmi Earphones">
+      </div>
+    </div>
+  
+    <div class="product">
+      <p>Mi Dual Driver In-ear Earphones</p>
+      <span class="discount">25% off</span><br>
+      <div class="com">
+        <span class="price p">₹799 <br> <span class="c">₹1099</span></span>    
+      <img class="p" src="img6.jpg" alt="Redmi Earphones">
+      </div>
+    
+    </div>
+  
+    <div class="product">
+      <p>Redmi SonicBass Wireless Earphones</p>
+      <span class="discount">25% off</span><br>
+      <div class="com">
+        <span class="price p">₹1,299 <br> <span class="c">₹1699</span></span>    
+      <img class="p" src="img7.webp" alt="Redmi Earphones">
+      </div>
+    </div>
+  
+    <div class="product">
+      <p>Mi Portable Bluetooth Speaker (16W)</p>
+      <span class="discount">20% off</span><br>
+      <div class="com">
+        <span class="price p">₹2,499 <br> <span class="c">₹3,599</span></span>    
+      <img class="p" src="img8.webp" alt="Redmi Earphones">
+      </div>
+    </div>
+  
+  </div>
+
+
+</body>
+</html>
