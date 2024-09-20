@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Clock</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .clock {
+    font-size: 6em;
+    color: white;
+    position: relative;
+  }
+
+  .number {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 2em;
+    animation: float 10s infinite;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+
+<div class="clock" id="clock">
+  <div class="number" style="top: 10%; left: 20%;">4</div>
+  <div class="number" style="top: 20%; left: 70%;">5</div>
+  <div class="number" style="top: 30%; left: 10%;">3</div>
+  <div class="number" style="top: 40%; left: 50%;">2</div>
+  <div class="number" style="top: 50%; left: 60%;">6</div>
+  <div class="number" style="top: 60%; left: 30%;">4</div>
+  <div class="number" style="top: 70%; left: 80%;">1</div>
+  <div class="number" style="top: 80%; left: 40%;">3</div>
+  <div class="number" style="top: 90%; left: 50%;">2</div>
+</div>
+
+<script>
+function updateClock() {
+  const now = new Date();
+  
+  let hours = now.getHours().toString();
+  let minutes = now.getMinutes().toString();
+  let seconds = now.getSeconds().toString();
+
+  if (hours.length < 2) hours = '0' + hours;
+  if (minutes.length < 2) minutes = '0' + minutes;
+  if (seconds.length < 2) seconds = '0' + seconds;
+
+  document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+}
+
+setInterval(updateClock, 1000);
+updateClock(); // initial call to display the clock immediately
+</script>
+
+</body>
+</html>
